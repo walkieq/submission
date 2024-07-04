@@ -38,7 +38,7 @@ tokenizer = Tokenizer(model_path=tokenizer_path)
 # disable end token
 tokenizer.eos_id = None
 
-model_path = "./stories110M.pt"
+model_path = "./stories260K.pt"
 model_pt = torch.load(model_path)
 
 del model_pt['model_args']['dropout']
